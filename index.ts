@@ -21,7 +21,7 @@ for(let cell of cells){
                 hd.style.backgroundColor='rgb(128, 15, 233)';
             }
         }
-    })
+    });
 }
 let thdrs:HTMLCollectionOf<HTMLTableCellElement> = <HTMLCollectionOf<HTMLTableCellElement>> document.getElementsByClassName('day');
 for(let thdr of thdrs){
@@ -38,7 +38,7 @@ for(let thdr of thdrs){
                 row.style.filter='blur(2px)';
             }
         }
-    })
+    });
     thdr.addEventListener('mouseout',(e:Event)=>{
         let target:HTMLTableCellElement = <HTMLTableCellElement>e.target;
         target.style.backgroundColor='rgb(128, 15, 233)';
@@ -48,5 +48,5 @@ for(let thdr of thdrs){
             }
             row.style.filter='none';
         }
-    })
+    });
 }
