@@ -1,0 +1,52 @@
+html{
+    height: 100%;
+}
+body{
+    background: linear-gradient(320deg,rgb(254, 92, 95),rgb(248, 9, 73),rgb(128, 15, 233));
+    height: inherit;
+    background-size: cover;
+}
+#timetable-wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+table{
+    display: flex;
+    border: 2px solid transparent;
+    background-color: rgba(72,72,72,01);
+    padding: 3px;
+    border-radius: 4px;
+    box-shadow: 2px 8px 15px black;
+    column-gap: 10px;
+}
+th,td{
+    border: 2px solid black;
+    background-color: rgb(56,56,56);
+    padding:25px;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+}
+th{
+    background-color: rgb(128, 15, 233);
+}
+td:hover{
+    background-color:rgba(248, 6, 236, 0.972);
+    box-shadow: 0 8px 10px black;
+}
+th:hover:not(#info,#title){
+    background-color: rgb(254, 92, 95);
+    box-shadow: 0 8px 10px black;
+}
+@media only screen and (max-width:1200px) {
+    #timetable-wrapper{
+        width: 100%;
+        height: inherit;
+    }
+    th,td{
+        padding: 10px;
+        border: 1px solid black;
+    }
+}
